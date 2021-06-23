@@ -627,7 +627,7 @@ Type again the command that returned errors and revert to your main environment 
 
 *rnaediting envirnment contains pysam==0.7.7     
  
-<p>1) Log into your area and create two separate folders for stranded and unstranded RNAseq data (eg. RNAseq)</p>
+<p>1) Log into your area and create two separate folders for strand-oriented and unstranded RNAseq data (eg. RNAseq)</p>
 <pre> 
 $ mkdir RNAseq_strnd
 $ cd ..
@@ -654,8 +654,9 @@ $ REDItoolKnown.py -i Lung_unstrnd.bam -f  /usr/share/course_data/rnaediting/hg1
 $ cd ..
 </pre>
 
+<p>4) Launch REDItoolKnown.py on RNAseq strand-oriented data and check them ONLY for those known positions extracted previously from REDIportal (e.g GRIA2)</p>
 <pre>
-$ cd RNAseq_unstrnd
+$ cd RNAseq_strnd
 $ REDItoolKnown.py -i SRR-6H_HD.bam -f  /usr/share/course_data/rnaediting/hg19ref/GRCh37.primary_assembly.genome.fa -l ../GRIA2nrptAtlasTable.txt.gz
 $ REDItoolKnown.py -i SRR-6H_HD.bam -f  /usr/share/course_data/rnaediting/hg19ref/GRCh37.primary_assembly.genome.fa -l ../AGBL4AtlasTable.txt.gz
 $ cd ..
