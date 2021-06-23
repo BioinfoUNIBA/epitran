@@ -19,4 +19,4 @@ Finally, during the afternoon we will illustrate a computational workflow to dis
 </p>
 
 <a href="https://github.com/BioinfoUNIBA/epitran/blob/main/Rediportal.md">Morning<a><br>
-<a href="">Afternoon</a>
+<a href="https://github.com/BioinfoUNIBA/epitran/blob/main/reditoolsdnarna.md">Afternoon</a>
