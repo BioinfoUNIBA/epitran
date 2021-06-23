@@ -632,7 +632,7 @@ Type again the command that returned errors and revert to your main environment 
 $ mkdir RNAseq_strnd
 $ cd ..
 $ mkdir RNAseq_unstrnd
-$ cd .
+$ cd ..
 </pre>
 <p>2) According to each folder copy the RNAseq data from Editing_knwn folder</p>
 <pre>
