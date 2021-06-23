@@ -1,4 +1,4 @@
-# EPITRAN workshop -RNA Editing 24/06/21 
+# EPITRAN workshop -RNA Editing 24/06/21 MORNING SESSION
 <a href="mailto:ernesto.picardi@uniba.it ">Ernesto Picardi</a><br>
 <a href="mailto:claudio.logiudice@uniba.it ">Claudio Lo Giudice</a>
 <p align="justify"> Epitranscriptome refers to all biochemical RNA modifications affecting cellular RNAs. 
