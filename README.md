@@ -18,7 +18,7 @@ GRIA2 and FLNA. These data will by used as input for one of the script embedded 
 Finally, during the afternoon we will illustrate a computational workflow to discover novel RNA editing events using RNAseq and WGS reads from the same sample.
 </p>
 
-<a href="./rediportal.md">Morning<a>
+<a href="https://github.com/BioinfoUNIBA/epitran/blob/main/Rediportal.md">Morning<a>
 
 <p> 
 The main steps described during the practice are reported below and can be easily copy/pasted in your terminal.<br>
