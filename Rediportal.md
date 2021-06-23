@@ -1,5 +1,5 @@
 <p class="text-justify">
-Searching into REDIportal is quite straightforward and also users with no bioinformatics skills can perform accurate searches across the database. RNA editing sites are stored according to their genomic positions and can be retrieved providing a genomic locus (“Genomic Region” field) or a known gene symbol (“Gene Name” field). Both fields are mutually exclusive.
+Searching into <a href="http://srv00.recas.ba.infn.it/atlas/search.html">REDIportal</a> is quite straightforward and also users with no bioinformatics skills can perform accurate searches across the database. RNA editing sites are stored according to their genomic positions and can be retrieved providing a genomic locus (“Genomic Region” field) or a known gene symbol (“Gene Name” field). Both fields are mutually exclusive.
 Genomic loci can be interrogated entering chromosome coordinates in the format Chr:start-end (for example chr4:158101247-158308846).<br>
 <b>Note.</b> Today we are going to extract all the editing events related to the genes GRIA2 and FLNA. 
 These annotations will be adapted to be used with the REDItoolKnown.py script.<br>
