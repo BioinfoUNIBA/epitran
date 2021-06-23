@@ -664,7 +664,7 @@ For each cell line, additional info are provided in tabular format by clicking o
 <div class="section" id="reditoolknown-py">
 <h2>REDItoolKnown.py<a class="headerlink" href="#reditoolknown-py" title="Permalink to this headline"></a></h2>
 <p>REDItoolKnown.py has been developed to explore the RNA editing potential of RNA-Seq data
-sets using known editing events. Such events can be downloaded from DARNED database or
+sets using known editing events. Such events can be downloaded from REDIportal database or
 generated from supplementary materials of a variety of publications. Known RNA editing events
 have to be stored in TAB files (see above for details).</p>
 <dl class="docutils">
