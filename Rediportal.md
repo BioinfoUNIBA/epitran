@@ -1,9 +1,12 @@
 <p class="text-justify">
 Searching into <a href="http://srv00.recas.ba.infn.it/atlas/search.html">REDIportal</a> is quite straightforward and also users with no bioinformatics skills can perform accurate searches across the database. RNA editing sites are stored according to their genomic positions and can be retrieved providing a genomic locus (“Genomic Region” field) or a known gene symbol (“Gene Name” field). Both fields are mutually exclusive.
 Genomic loci can be interrogated entering chromosome coordinates in the format Chr:start-end (for example chr4:158101247-158308846).<br>
-<b>Note.</b> Today we are going to extract all the editing events related to the genes GRIA2 and FLNA. 
-These annotations will be adapted to be used with the REDItoolKnown.py script.<br>
-This script has been developed to explore the RNA editing potential of RNA-Seq data sets using only known editing events.    
+<b>Note.</b> Today we are going to extract all the editing events related to the genes GRIA2 and FLNA.<br> 
+The protein encoded by the <b>FLNA<b> gene is an actin-binding protein that is involved in remodeling the cytoskeleton to effect changes in cell shape and migration.<br>
+<b>GRIA2<b> gene product belongs to a family of glutamate receptors.Human and animal studies suggest that pre-mRNA editing is essential for brain function, and defective GRIA2 RNA editing may be relevant to amyotrophic lateral sclerosis (ALS) etiology.
+
+FLNA and GRIA2 annotations will be adapted to be used with the REDItoolKnown.py script (see below).<br>
+This script has been developed to explore the RNA editing potential of RNA-Seq data sets using <b>only known<b> editing events.    
 </p>
 <br>
 <div align="center"><img src="img/sc1.png" width="50%" height="50%"/></div>
