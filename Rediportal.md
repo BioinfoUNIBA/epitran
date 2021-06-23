@@ -224,7 +224,7 @@ The "View Editing Details" button enables the opening of a new windows including
 <br><br>
 
 
-<table class="table table-bordered">
+<!--table class="table table-bordered">
 <tr>
 <th width="20%">Column Name</th>
 <th>Meaning</th>
@@ -265,9 +265,9 @@ The "View Editing Details" button enables the opening of a new windows including
 <td><b>gFreq</b></td>
 <td><p class="text-justify">Max Frequency of AG change at genomic level.</p></td>
 </tr>
-</table>
+</table-->
 
-<p class="text-justify">
+<!--p class="text-justify">
 Individual run or tissue or bosy sites can be selected by using the "Select" button below each column.
 Numerical columns can be sorted by clicking on each column title.
 </p>
@@ -295,7 +295,7 @@ Specific columns of result table can be hided by clicking on "Column visibility"
 </p>
 <br>
 <div align="center"><img src="img/sc20.png" width="100%" height="100%"/></div>
-<br><br>
+<br><br-->
 
 <p class="text-justify">
 Users can increase the number of visible rows by using the "Show" button. 
@@ -333,7 +333,7 @@ Columns with gray arrows are sortable in ascending or descending order.
 <br><br>
 
 
-<hr>
+<!--hr>
 <h4 id="S4">Search RNAseq samples in REDIportal</h4>
 <p class="text-justify">
 REDIportal allows also RNA editing searches at sample level. Users can browse RNA editing statistics detected in each RNAseq experiment by selecting the “Search Sample” page from the main menu and providing specific options. Indeed, users can interrogate the database introducing the name of a sample in the “Sample name” form using the run accession number provided by SRA (or dbGAP or GTEx) (for example SRR1069188) or can select samples by source (GTEx) or status (normal, tumor) or data type (bulk tissue or single cell) or tissue or body site. In addition, samples can be selected according to the expression of ADAR genes or Alu Editing index values.
@@ -604,4 +604,4 @@ For each cell line, additional info are provided in tabular format by clicking o
 <br><br>
 <br><br>
     </div>
-    <div class="col-sm-2 sidenav">
+    <div class="col-sm-2 sidenav"-->
