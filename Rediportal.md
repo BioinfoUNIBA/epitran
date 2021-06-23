@@ -607,4 +607,177 @@ For each cell line, additional info are provided in tabular format by clicking o
     <div class="col-sm-2 sidenav"-->
 
 <h3>Practical_part</h3>
-<p>After searching for GRIA2/FLNA gene use the "Download" button embedded with the Results table and select the right columns required by the REDItoolKnown.py script<p>
+<p>After searching for GRIA2 and FLNA genes use the "Download" button embedded with the Results table and select the right columns to otain a table separated file compatible with the REDItoolKnown.py script.<p>
+<h2>TAB<a class="headerlink" href="#tab" title="Permalink to this headline"></a></h2>
+<p>TAB files are simple textual files with at least three tabulated columns including:</p>
+<ul class="simple">
+<li>genomic region (generally the chromosome name according to the reference genome)</li>
+<li>coordinate of the position (1-based)</li>
+<li>strand (+ or -). You can also indicate strand by 0 (strand -), 1 (strand +) or 2 (+ and - or unknown)</li>
+</ul>
+<table border="0" class="docutils">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">genomic region</th>
+<th class="head">coordinate</th>
+<th class="head">strand</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>chr21</td>
+<td>10205589</td>
+<td>-</td>
+</tr>
+<tr class="row-odd"><td>chr21</td>
+<td>10205629</td>
+<td>-</td>
+</tr>
+<tr class="row-even"><td>chr21</td>
+<td>15411496</td>
+<td>+</td>
+</tr>
+<tr class="row-odd"><td>chr21</td>
+<td>15412990</td>
+<td>+</td>
+</tr>
+<tr class="row-even"><td>chr21</td>
+<td>15414553</td>
+<td>+</td>
+</tr>
+<tr class="row-odd"><td>chr21</td>
+<td>15415901</td>
+<td>+</td>
+</tr>
+<tr class="row-even"><td>chr21</td>
+<td>15417667</td>
+<td>+</td>
+</tr>
+<tr class="row-odd"><td>chr21</td>
+<td>15423330</td>
+<td>+</td>
+</tr>
+</tbody>
+</table>
+<p>TAB files must be coordinate sorted. In unix/linux environment they can be sorted by the sort command:</p>
+<div class="highlight-python"><pre>sort -k1,1 -k2,2n mytable.txt &gt; mytable.sorted.txt</pre>
+</div>
+    
+<div class="section" id="reditoolknown-py">
+<h2>REDItoolKnown.py<a class="headerlink" href="#reditoolknown-py" title="Permalink to this headline"></a></h2>
+<p>REDItoolKnown.py has been developed to explore the RNA editing potential of RNA-Seq data
+sets using known editing events. Such events can be downloaded from DARNED database or
+generated from supplementary materials of a variety of publications. Known RNA editing events
+have to be stored in TAB files (see above for details).</p>
+<dl class="docutils">
+<dt>Options:</dt>
+<dd><table class="first last docutils option-list" frame="void" rules="none">
+<col class="option" />
+<col class="description" />
+<tbody valign="top">
+<tr><td class="option-group">
+<kbd><span class="option">-i</span></kbd></td>
+<td>BAM file</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-I</span></kbd></td>
+<td>Sort input BAM file</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-f</span></kbd></td>
+<td>Reference in fasta file</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-l</span></kbd></td>
+<td>List of known RNA editing events</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-C</span></kbd></td>
+<td>Base interval to explore [100000]</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-k</span></kbd></td>
+<td>List of chromosomes to skip separated by comma or file</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-t</span></kbd></td>
+<td>Number of threads [1]</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-o</span></kbd></td>
+<td>Output folder [rediFolder_XXXX] in which all results will be stored. XXXX is a random number generated at each run.</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-F</span></kbd></td>
+<td>Internal folder name [null] is the main folder containing output tables.</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-c</span></kbd></td>
+<td>Min. read coverage [10]</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-q</span></kbd></td>
+<td>Minimum quality score [25]</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-m</span></kbd></td>
+<td>Minimum mapping quality score [25]</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-O</span></kbd></td>
+<td>Minimum homoplymeric length [5]</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-s</span></kbd></td>
+<td>Infer strand (for strand oriented reads) [1]. It indicates which read is in line with RNA. Available values are: 1:read1 as RNA,read2 not as RNA;
+2:read1 not as RNA,read2 as RNA; 12:read1 as RNA,read2 as RNA; 0:read1 not as RNA,read2 not as RNA.</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-g</span></kbd></td>
+<td>Strand inference type 1:maxValue 2:useConfidence [1]; maxValue: the most prominent strand count will be used; useConfidence: strand is assigned if over a prefixed frequency confidence (-x option)</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-x</span></kbd></td>
+<td>Strand confidence [0.70]</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-S</span></kbd></td>
+<td>Strand correction. Once the strand has been inferred, only bases according to this strand will be selected.</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-G</span></kbd></td>
+<td>Infer strand by GFF annotation (must be sorted, otherwise use -X). Sorting requires grep and sort unix executables.</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-X</span></kbd></td>
+<td>Sort annotation files. It requires grep and sort unix executables.</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-K</span></kbd></td>
+<td>File with positions to exclude (chromosome_name coordinate)</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-e</span></kbd></td>
+<td>Exclude multi hits</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-d</span></kbd></td>
+<td>Exclude duplicates</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-p</span></kbd></td>
+<td>Use paired concardant reads only</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-u</span></kbd></td>
+<td>Consider mapping quality</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-T</span></kbd></td>
+<td>Trim x bases up and y bases down per read [0-0]</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-B</span></kbd></td>
+<td>Blat folder for correction</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-U</span></kbd></td>
+<td>Remove substitutions in homopolymeric regions</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-v</span></kbd></td>
+<td>Minimum number of reads supporting the variation [3]</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-n</span></kbd></td>
+<td>Minimum editing frequency [0.1]</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-E</span></kbd></td>
+<td>Exclude positions with multiple changes</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-P</span></kbd></td>
+<td>File containing splice sites annotations (SpliceSite file format see above for details)</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-r</span></kbd></td>
+<td>Num. of bases near splice sites to explore [4]</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-h</span></kbd></td>
+<td>Print the help</td></tr>
+</tbody>
+</table>
+</dd>
+</dl>
+<p>Example:</p>
+<div class="highlight-python"><pre>REDItoolKnown.py -i rnaseq.bam -f reference.fa -l knownEditingSites.tab</pre>
+</div>
+</div>
