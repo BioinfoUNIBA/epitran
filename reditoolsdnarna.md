@@ -7,11 +7,11 @@ The main steps described during the practice are reported below and can be easil
 Due to multiple available versions of the core module pysam, it is possibile that some commands will return you a pysam error. <br>
 In those cases just type:
 <pre> $ conda activate rnaediting2 </pre>
-*rnaediting2 environment contains pysam==0.7.7
+*rnaediting2 environment contains pysam=0.15.2
 <br>Type again the command that returned errors and revert to your main environment with: 
 <br><br>
 <pre> $ conda activate ranaediting </pre>
-*rnaediting envirnment contains pysam=0.15.2
+*rnaediting envirnment contains pysam==0.7.7
 <table>
 <thead>
 <th>Sample</th>
