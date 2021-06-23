@@ -224,7 +224,7 @@ The "View Editing Details" button enables the opening of a new windows including
 <br><br>
 
 
-<!--table class="table table-bordered">
+<table class="table table-bordered">
 <tr>
 <th width="20%">Column Name</th>
 <th>Meaning</th>
@@ -265,7 +265,7 @@ The "View Editing Details" button enables the opening of a new windows including
 <td><b>gFreq</b></td>
 <td><p class="text-justify">Max Frequency of AG change at genomic level.</p></td>
 </tr>
-</table-->
+</table>
 
 <!--p class="text-justify">
 Individual run or tissue or bosy sites can be selected by using the "Select" button below each column.
