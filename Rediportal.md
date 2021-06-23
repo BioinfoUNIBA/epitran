@@ -657,8 +657,8 @@ $ cd ..
 <p>4) Launch REDItoolKnown.py on RNAseq strand-oriented data and check them ONLY for those known positions extracted previously from REDIportal (e.g GRIA2)</p>
 <pre>
 $ cd RNAseq_strnd
-$ REDItoolKnown.py -i SRR-6H_HD.bam -f  /usr/share/course_data/rnaediting/hg19ref/GRCh37.primary_assembly.genome.fa -l ../GRIA2nrptAtlasTable.txt.gz
-$ REDItoolKnown.py -i SRR-6H_HD.bam -f  /usr/share/course_data/rnaediting/hg19ref/GRCh37.primary_assembly.genome.fa -l ../AGBL4AtlasTable.txt.gz
+$ REDItoolKnown.py -i SRR-6H_HD.bam -f  /usr/share/course_data/rnaediting/hg19ref/GRCh37.primary_assembly.genome.fa -l ../GRIA2nrptAtlasTable.txt.gz -s2 -S
+$ REDItoolKnown.py -i SRR-6H_HD.bam -f  /usr/share/course_data/rnaediting/hg19ref/GRCh37.primary_assembly.genome.fa -l ../AGBL4AtlasTable.txt.gz -s2 -S
 $ cd ..
 </pre>
 
