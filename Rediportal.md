@@ -610,8 +610,57 @@ For each cell line, additional info are provided in tabular format by clicking o
     </div>
     <div class="col-sm-2 sidenav"-->
 
-<h3>Practical_part</h3>
+<h3>Practical part</h3>
 <p>After searching for GRIA2 and FLNA genes use the "Download" button embedded with the Results table and select the right columns to otain a table separated file compatible with the REDItoolKnown.py script.<p>
+The main steps described during the practice are reported below and can be easily copy/pasted in your terminal.<br>
+Note. Assuming you're traineeX, please change X according to your workspace.<br>
+IMPORTANT! REDItoolKnown.py outTable (eg. outTable_892028847) contains 8digit random number, so it usually varies among users and different script launches on the same machine.<br>
+Due to multiple available versions of the core module pysam, it is possibile that some commands will return you a pysam error.
+In those cases just type:
+    
+<pre>$ conda activate rnaediting2</pre>
+
+*rnaediting2 environment contains pysam=0.15.2
+Type again the command that returned errors and revert to your main environment with:
+
+<pre>$ conda activate ranaediting</pre>
+
+*rnaediting envirnment contains pysam==0.7.7     
+ 
+<p>1) Log into your area and create two separate folders for stranded and unstranded RNAseq data (eg. RNAseq)</p>
+<pre> 
+$ mkdir RNAseq_strnd
+$ cd ..
+$ mkdir RNAseq_unstrnd
+$ cd .
+</pre>
+<p>2) According to each folder copy the RNAseq data from Editing_knwn folder</p>
+<pre>
+$ cd RNAseq_unstrnd
+$ cp /usr/share/course_data/rnaediting/Editing_knwn/Unstrnd/*.bam* .
+$ cd ..
+$ cd RNAseq_strnd/
+$ cp /usr/share/course_data/rnaediting/Editing_knwn/Strndd/*.bam* .
+$ cd ..
+</pre>
+<b>Note.</b>If unable to upload them from your computer to your home folder, you can recover the tab files from /usr/share/course_data/rnaediting/Editing_knwn/, by entering your workspace and giving the command:
+<pre>$ cp /usr/share/course_data/rnaediting/Editing_knwn/*.gz* .</pre>
+
+<p>3) Launch REDItoolKnown.py on RNAseq unstranded data and check them ONLY for those known positions extracted previously from REDIportal (e.g GRIA2)</p>
+<pre>
+$ cd RNAseq_unstrnd
+$ REDItoolKnown.py -i Cerebellum_unstrnd.bam -f  /usr/share/course_data/rnaediting/hg19ref/GRCh37.primary_assembly.genome.fa -l ../GRIA2nrptAtlasTable.txt.gz  
+$ REDItoolKnown.py -i Lung_unstrnd.bam -f  /usr/share/course_data/rnaediting/hg19ref/GRCh37.primary_assembly.genome.fa -l ../FLNAAtlasTable.txt.gz
+$ cd ..
+</pre>
+
+<pre>
+$ cd RNAseq_unstrnd
+$ REDItoolKnown.py -i SRR-6H_HD.bam -f  /usr/share/course_data/rnaediting/hg19ref/GRCh37.primary_assembly.genome.fa -l ../GRIA2nrptAtlasTable.txt.gz
+$ REDItoolKnown.py -i SRR-6H_HD.bam -f  /usr/share/course_data/rnaediting/hg19ref/GRCh37.primary_assembly.genome.fa -l ../AGBL4AtlasTable.txt.gz
+$ cd ..
+</pre>
+
 <h2>TAB<a class="headerlink" href="#tab" title="Permalink to this headline"></a></h2>
 <p>TAB files are simple textual files with at least three tabulated columns including:</p>
 <ul class="simple">
@@ -785,18 +834,4 @@ have to be stored in TAB files (see above for details).</p>
 <div class="highlight-python"><pre>REDItoolKnown.py -i rnaseq.bam -f reference.fa -l knownEditingSites.tab</pre>
 </div>
 </div>
- The main steps described during the practice are reported below and can be easily copy/pasted in your terminal.
-Note. Assuming you're traineeX, please change X according to your workspace.
-Note2. Choose a GTEX sample from Cerebellum or Lung and copy DNAseq/RNAseq accordingly in your home folder.
-IMPORTANT! REDItoolDnaRna.py outTable (eg. outTable_892028847) contains 8digit random number, so it usually varies among users and different script launches on the same machine.
-Due to multiple available versions of the core module pysam, it is possibile that some commands will return you a pysam error.
-In those cases just type:
 
- $ conda activate rnaediting2 
-
-*rnaediting2 environment contains pysam=0.15.2
-Type again the command that returned errors and revert to your main environment with:
-
- $ conda activate ranaediting 
-
-*rnaediting envirnment contains pysam==0.7.7 
