@@ -6,7 +6,7 @@ The protein encoded by the <b>FLNA</b> gene is an actin-binding protein that is 
 <b>GRIA2</b> gene product belongs to a family of glutamate receptors.Human and animal studies suggest that pre-mRNA editing is essential for brain function, and defective GRIA2 RNA editing may be relevant to amyotrophic lateral sclerosis (ALS) etiology.
 
 FLNA and GRIA2 annotations will be adapted to be used with the REDItoolKnown.py script (see below).<br>
-This script has been developed to explore the RNA editing potential of RNA-Seq data sets using <b>only known<b> editing events</b>.    
+This script has been developed to explore the RNA editing potential of RNA-Seq data sets using <b>only known</b> editing events.    
 </p>
 <br>
 <div align="center"><img src="img/sc1.png" width="50%" height="50%"/></div>
