@@ -3,7 +3,7 @@
 The main steps described during the practice are reported below and can be easily copy/pasted in your terminal.<br>
 <b>Note.</b> Assuming you're traineeX, please change X according to your workspace.<br>
 <b>Note2.</b> Choose a GTEX sample from Cerebellum or Lung and copy DNAseq/RNAseq accordingly in your home folder.<br>
-<b>IMPORTANT!</b> REDItoolDnaRna.py outTable (eg. outTable_892028847) contains 8digit random number, so it usually varies among users and different script launches on the same machine.<br>
+<b>IMPORTANT!</b> REDItoolDnaRna.py outTable (eg. outTable_892028847) contains 9digit random number, so it usually varies among users and different script launches on the same machine.<br>
 Due to multiple available versions of the core module pysam, it is possibile that some commands will return you a pysam error. <br>
 In those cases just type:
 <pre> $ conda activate rnaediting2 </pre>
