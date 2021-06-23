@@ -627,7 +627,7 @@ Type again the command that returned errors and revert to your main environment 
 
 *rnaediting envirnment contains pysam==0.7.7     
  
-<p>1) Log into your area and create two separate folders for strand-oriented and unstranded RNAseq data (eg. RNAseq)</p>
+<p>1) Log into your area and create two separate folders for strand-oriented and unstranded RNAseq data (eg. RNAseq_strnd)</p>
 <pre> 
 $ mkdir RNAseq_strnd
 $ cd ..
