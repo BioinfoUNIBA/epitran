@@ -785,3 +785,18 @@ have to be stored in TAB files (see above for details).</p>
 <div class="highlight-python"><pre>REDItoolKnown.py -i rnaseq.bam -f reference.fa -l knownEditingSites.tab</pre>
 </div>
 </div>
+ The main steps described during the practice are reported below and can be easily copy/pasted in your terminal.
+Note. Assuming you're traineeX, please change X according to your workspace.
+Note2. Choose a GTEX sample from Cerebellum or Lung and copy DNAseq/RNAseq accordingly in your home folder.
+IMPORTANT! REDItoolDnaRna.py outTable (eg. outTable_892028847) contains 8digit random number, so it usually varies among users and different script launches on the same machine.
+Due to multiple available versions of the core module pysam, it is possibile that some commands will return you a pysam error.
+In those cases just type:
+
+ $ conda activate rnaediting2 
+
+*rnaediting2 environment contains pysam=0.15.2
+Type again the command that returned errors and revert to your main environment with:
+
+ $ conda activate ranaediting 
+
+*rnaediting envirnment contains pysam==0.7.7 
