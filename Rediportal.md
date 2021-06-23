@@ -611,10 +611,10 @@ For each cell line, additional info are provided in tabular format by clicking o
     <div class="col-sm-2 sidenav"-->
 
 <h3>Practical part</h3>
-<p>After searching for GRIA2 and FLNA genes use the "Download" button embedded with the Results table and select the right columns to otain a table separated file compatible with the REDItoolKnown.py script.<p>
+<p>After searching for GRIA2 and FLNA genes use the "Download" button embedded with the Results table and select the right columns to obtain a table separated file compatible with the REDItoolKnown.py script<br> See below for further details on this file format.<p>
 The main steps described during the practice are reported below and can be easily copy/pasted in your terminal.<br>
 Note. Assuming you're traineeX, please change X according to your workspace.<br>
-IMPORTANT! REDItoolKnown.py outTable (eg. outTable_892028847) contains 8digit random number, so it usually varies among users and different script launches on the same machine.<br>
+IMPORTANT! REDItoolKnown.py outTable (eg. outTable_892028847) contains 9digit random number, so it usually varies among users and different script launches on the same machine.<br>
 Due to multiple available versions of the core module pysam, it is possibile that some commands will return you a pysam error.
 In those cases just type:
     
@@ -623,7 +623,7 @@ In those cases just type:
 *rnaediting2 environment contains pysam=0.15.2
 Type again the command that returned errors and revert to your main environment with:
 
-<pre>$ conda activate ranaediting</pre>
+<pre>$ conda activate rnaediting</pre>
 
 *rnaediting envirnment contains pysam==0.7.7     
  
