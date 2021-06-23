@@ -605,3 +605,6 @@ For each cell line, additional info are provided in tabular format by clicking o
 <br><br>
     </div>
     <div class="col-sm-2 sidenav"-->
+
+<h3>Practical_part</h3>
+<p>After searching for GRIA2/FLNA gene use the "Download" button embedded with the Results table and select the right columns required by the REDItoolKnown.py script<p>
