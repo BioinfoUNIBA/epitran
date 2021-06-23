@@ -73,7 +73,7 @@ $cd ..
 <b>4) Create a folder for your DNAseq data (eg. DNAseq)</b>
 $ mkdir DNAseq
 
->b>5) Copy the DNAseq data inside it</b>
+<b>5) Copy the DNAseq data inside it</b>
 $ cp ../data/rnaediting/DNAseq/Lung* .
 
 <b>6) Detect all potential DNA–RNA variants in your data (limited to chromosome 21) using the REDItoolDnaRNA.py script:</b>
