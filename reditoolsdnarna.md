@@ -7,7 +7,8 @@ The main steps described during the practice are reported below and can be easil
 Due to multiple available versions of the core module pysam, it is possibile that some commands will return you a pysam error. <br>
 In those cases just type:
 <pre> $ conda activate rnaediting2 </pre>
-Give again the command that returned errors and revert to your main environment with: <br>
+Type again the command that returned errors and revert to your main environment with: 
+<br><br>
 <pre> $ conda activate ranaediting </pre>
   
 <table>
