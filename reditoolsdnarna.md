@@ -10,7 +10,7 @@ In those cases just type:
 *rnaediting2 environment contains pysam=0.15.2
 <br>Type again the command that returned errors and revert to your main environment with: 
 <br><br>
-<pre> $ conda activate ranaediting </pre>
+<pre> $ conda activate rnaediting </pre>
 *rnaediting envirnment contains pysam==0.7.7
 <table>
 <thead>
