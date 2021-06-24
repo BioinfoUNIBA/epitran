@@ -79,7 +79,7 @@ $ cp ../data/rnaediting/DNAseq/Lung* .
 <b>6) Detect all potential DNA–RNA variants in your data (limited to chromosome 21) using the REDItoolDnaRNA.py script:</b>
 
 $ REDItoolDnaRna.py -i ./RNAseq/SRR1310520_chr21_Aligned.sortedByCoord.out.bam -j ./DNAseq/Lung_sorted.bam -o editing -f /usr/share/course_data/rnaediting/hg19ref/GRCh37.primary_assembly.genome.fa  -c1,1 -m30,255 -v1 -q30,30 -e -n0.0 -N0.0 -u -l -p -s2 -g2  -S -Y chr21:1-48129895
-For detailed REDItoolDnaRnaGTEX.py options <a href="https://github.com/BioinfoUNIBA/REDItools/blob/master/README_1.md#reditooldnarna-py">click here</a>
+For detailed REDItoolDnaRna.py options <a href="https://github.com/BioinfoUNIBA/REDItools/blob/master/README_1.md#reditooldnarna-py">click here</a>
 
 <b>7) Exclude invariant positions as well as positions not supported by ≥10 WGS reads:</b>
 
@@ -154,7 +154,7 @@ $ REDItoolDnaRna.py -s 2 -g 2 -S -t 4 -i ./RNAseq/SRR1310520_chr21_Aligned.sorte
 
 <b>19) Launch REDItoolDnaRna.py on REP NON ALU and NON REP sites using stringent criteria to recover RNAseq reads harboring reference mismatches:</b>
 
-$ REDItoolDnaRnaGTEX.py -s 2 -g 2 -S -t 4 -i ./RNAseq/SRR1310520_chr21_Aligned.sortedByCoord.out.bam -f /usr/share/course_data/rnaediting/hg19ref/GRCh37.primary_assembly.genome.fa -c 10,10 -q 30,30 -m 255,255 -O 5,5 -p -u -a 11-6 -l -v 3 -n 0.1 -e -T pos.sorted.gff.gz -w /usr/share/course_data/rnaediting/Gencode_annotation/gencode.v30lift37.chr21.splicesites.txt -k /usr/share/course_data/rnaediting/hg19ref/nochr --reads -R --addP -o first
+$ REDItoolDnaRna.py -s 2 -g 2 -S -t 4 -i ./RNAseq/SRR1310520_chr21_Aligned.sortedByCoord.out.bam -f /usr/share/course_data/rnaediting/hg19ref/GRCh37.primary_assembly.genome.fa -c 10,10 -q 30,30 -m 255,255 -O 5,5 -p -u -a 11-6 -l -v 3 -n 0.1 -e -T pos.sorted.gff.gz -w /usr/share/course_data/rnaediting/Gencode_annotation/gencode.v30lift37.chr21.splicesites.txt -k /usr/share/course_data/rnaediting/hg19ref/nochr --reads -R --addP -o first
 
 <b>20) Launch pblat on RNAseq reads harboring reference mismatches from previous step and select multimapping reads:</b>
 
