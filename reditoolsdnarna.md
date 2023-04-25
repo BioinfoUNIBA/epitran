@@ -1,4 +1,4 @@
-# EPITRAN workshop -RNA Editing 24/06/21 AFTERNOON SESSION
+# Epitranscriptome Course Bari 28-April-2023 
 <p> 
 The main steps described during the practice are reported below and can be easily copy/pasted in your terminal.<br>
 <b>Note.</b> Assuming you're traineeX, please change X according to your workspace.<br>
