@@ -19,40 +19,34 @@ In those cases just type:
 <th>Gender</th>
 <th>Path</th>
 <tr>
-<td>SRR1307770.bam</td>
-<td>Brain - Cerebellum</td>
+<td>SRR1083076.bam</td>
+<td>Artery - Aorta</td>
 <td>male normal</td> 
-<td>/usr/share/course_data/rnaediting/cerebellum/RNAseq_fq</td>
+<td>/data/artery/SRR1083076/SRR1083076.bam/</td>
 </tr>
 <tr>
-<td>SRR1434867.bam</td>
+<td>SRR1091254.bam</td>
+<td>Artery - Aorta</td>
+<td>male normal</td>
+<td>/data/artery/SRR1091254/SRR1091254.bam</td>
+</tr>
+<tr>
+<td>SRR1368668.bam</td>
+<td>Artery - Aorta</td>
+<td>male normal</td>
+<td>/data/artery/SRR1368668/SRR1368668.bam</td>
+</tr>
+<tr>
+<td>SRR1086680.bam</td>
 <td>Brain - Cerebellum</td>
 <td>male normal</td>
-<td>/usr/share/course_data/rnaediting/cerebellum/RNAseq_fq</td>
+<td>/data/brain/SRR1086680/SRR1086680.bam</td>
 </tr>
 <tr>
-<td>SRR1361736.bam</td>
+<td>SRR1311771.bam</td>
 <td>Brain - Cerebellum</td>
 <td>male normal</td>
-<td>/usr/share/course_data/rnaediting/cerebellum/RNAseq_fq</td>
-</tr>
-<tr>
-<td>SRR1310520.bam</td>
-<td>Lung</td>
-<td>male normal</td>
-<td>/usr/share/course_data/rnaediting/lung/RNAseq_fq</td>
-</tr>
-<tr>
-<td>SRR1334490.bam</td>
-<td>Lung</td>
-<td>male normal</td>
-<td>/usr/share/course_data/rnaediting/lung/RNAseq_fq</td>
-</tr>
-<tr>
-<td>SRR1475524.bam</td>
-<td>Lung</td>
-<td>male normal</td>
-<td>/usr/share/course_data/rnaediting/lung/RNAseq_fq</td>
+<td>/data/brain/SRR1311771/SRR1311771.bam</td>
 </tr>
 </thead>
 </table>
